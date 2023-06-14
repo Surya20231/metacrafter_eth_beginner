@@ -2,10 +2,10 @@
 pragma solidity >=0.8.0 <0.9.0;
 contract MyToken  { 
 
-string  name ;
-string symbol ;
-mapping (address => uint256) balance ;
-uint256 total_Supply ;
+string public name ;
+string public symbol ;
+mapping (address => uint256) public balance ;
+uint256 public total_Supply ;
  constructor (string memory _name , string memory _symbol  , uint256 initial_supply)  {
 
      name = _name ;
